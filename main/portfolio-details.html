@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href="assets/css/style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Image Slider with Text on the Right</title>
+    <style>
+        body {
+            background-color: rgba(255, 196, 252, 0.397);
+        }
+        
+        .slider-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .slider {
+            flex: 1;
+        }
+        
+        .slider img {
+            width: 100%;
+            height: auto;
+            display: none;
+        }
+        
+        .slider img.active {
+            display: block;
+        }
+        
+        .text-container {
+            flex: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="text-container" style="background-color: rgba(255, 196, 252, 0.605); margin: 50px; border-radius: 10%;">
+            <div class="portfolio-description">
+                <div class="portfolio-info">
+                    <h3>Project informations</h3>
+                    <h4>You can find all my project and more in my <a style="color: rgb(241, 105, 235);" href="https://github.com/rawanabuzir">github</a></h4>
+
+                </div>
+            </div>
+        </div>
+    </center>
+
+    <div class="slider-container" style="margin-top: 30px; margin-bottom: 20px;">
+
+        <div class="slider">
+            <img src="./assets/img/web1.png" alt="">
+
+            <img src="./assets/img/web2.png" alt="">
+
+            <img src="./assets/img/web3.png" alt="">
+
+            <img src="./assets/img/web4.png" alt="">
+
+            <img src="./assets/img/web5.png" alt="">
+
+            <img src="./assets/img/web6.png" alt="">
+
+
+            <img src="./assets/img/7.png" alt="">
+
+
+            <img src="./assets/img/web8.png" alt="">
+
+
+
+            <img src="./assets/img/web9.png" alt="">
+
+
+            <img src="./assets/img/web10.png" alt="">
+
+
+            <img src="./assets/img/web12.png" alt="">
+
+
+
+            <img src="./assets/img/web13.png" alt="">
+
+            <img src="./assets/img/app5.png" alt="">
+
+
+
+            <img src="./assets/img/app6.png" alt="">
+
+
+
+            <img src="./assets/img/app7.png" alt="">
+
+            <img src="./assets/img/app8.png" alt="">
+
+
+            <img src="./assets/img/app1.jpg" alt="">
+
+
+
+            <img src="./assets/img/app2.jpg" alt="">
+
+
+            <img src="./assets/img/app3.jpg" alt="">
+
+
+            <img src="./assets/img/app4.jpg" alt="">
+        </div>
+        <div class="text-container" style="background-color: rgba(255, 196, 252, 0);">
+            <div class="portfolio-description">
+
+                <h2>About my work</h2>
+                <h5 style="font-size: 15px;">
+                    I am a passionate programmer committed to writing clean and efficient code. I enjoy tackling challenges and seeing my ideas come to life smoothly. I specialize in multiple programming languages and frameworks, and I constantly strive to enhance my skills
+                    and stay updated with the latest technologies. <br>I am a strong team player and believe in the importance of collaboration and effective communication with colleagues. I thrive in an environment that fosters creative
+                    exchange and supports team growth.
+                    <br> I value quality and attention to detail, and I take care to thoroughly test and review code to ensure its efficient performance. I embrace challenges as opportunities for personal and professional growth. I utilize my analytical
+                    skills to tackle complex problems by breaking them down into manageable parts. <br> I always aim to find innovative and effective solutions. For me, being a programmer is more than just a job; it's a passion that allows me to express
+                    my creativity and achieve my goals. My objective is to deliver exceptional work and make a positive impact through my programming.
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var sliderImages = document.querySelectorAll('.slider img');
+            var currentImageIndex = 0;
+
+            setInterval(function() {
+                sliderImages[currentImageIndex].classList.remove('active');
+                currentImageIndex = (currentImageIndex + 1) % sliderImages.length;
+                sliderImages[currentImageIndex].classList.add('active');
+            }, 3000);
+        });
+    </script>
+
+</body>
+
+
+</html>
