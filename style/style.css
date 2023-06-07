@@ -6,7 +6,7 @@
 body {
     margin: 0;
     font: sans-serif;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(248, 248, 248);
     overflow-y: scroll;
 }
 
@@ -86,12 +86,12 @@ body {
 i {
     font-size: 2rem;
     margin-right: 1rem;
-    color: #F3BCC8;
+    color: #9376E0;
     transition: all 500ms ease;
 }
 
 i:hover {
-    color: #9376E0;
+    color: #F3BCC8;
     transform: scale(1.2) rotate(360deg);
 }
 
@@ -99,6 +99,8 @@ i:hover {
     margin-top: 1rem;
     padding: 1rem;
     display: flex;
+    margin-top: 120px;
+    margin-left: 50px;
     flex-direction: row;
 }
 
@@ -106,7 +108,6 @@ i:hover {
     body {
         overflow-y: hidden;
     }
-
     .conatiner {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         position: absolute;
@@ -120,20 +121,16 @@ i:hover {
         margin-right: -50%;
         transform: translate(-50%, -50%);
     }
-
     .hero-img {
         height: 15rem;
         width: 15rem;
     }
-
     .hero-info-section {
         flex-direction: row;
     }
-
     .socials {
         flex-direction: column;
     }
-
     .row {
         flex-direction: row;
     }
@@ -144,8 +141,9 @@ i:hover {
     margin-top: 20px;
     padding: 10px 20px;
     margin-left: 150px;
-    background-color: #9276e00d;
-    color: #F6FFA6;
+    background-color: #8a7cb100;
+    font-weight: bold;
+    color: #F3BCC8;
     font-size: 18px;
     border: none;
     cursor: pointer;
